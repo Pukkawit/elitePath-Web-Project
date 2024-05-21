@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elitePath Web Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="browser-toolbar">
+        <div class="controls">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left-section">
+          <div class="sidebar">
+            <div class="site-logo">
+              <div class="logo"><img src="./img/aerten-logo.png" alt="" /></div>
+              <h1>
+                A<span class="logo-text-variation">e</span>rt<span
+                  class="logo-text-variation"
+                  >e</span
+                >n
+              </h1>
+            </div>
+            <div class="sidebar-menu">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="menu-items dashboard active-sidebar-menu">
+                      <div class="menu-icons hidden">
+                        <img
+                          src="./icons/mynaui--home-plus.svg"
+                          alt=""
+                          class="icon-black"
+                        />
+                      </div>
+                      <div class="menu-icons">
+                        <img
+                          src="./icons/white_mynaui--home-plus.svg"
+                          alt=""
+                          class="icon-white"
+                        />
+                      </div>
+                      Dashboard
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="menu-items roles">
+                      <div class="menu-icons">
+                        <img
+                          src="./icons/mynaui--briefcase.svg"
+                          alt=""
+                          class="icon-black"
+                        />
+                      </div>
+                      <div class="menu-icons hidden">
+                        <img
+                          src="./icons/white_mynaui--briefcase.svg"
+                          alt=""
+                          class="icon-white"
+                        />
+                      </div>
+                      Roles
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="menu-items employees">
+                      <div class="menu-icons white-icon hidden">
+                        <img
+                          class="icon-white"
+                          src="./icons/white_flowbite--users-group-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="menu-icons black-icon">
+                        <img
+                          class="icon-black"
+                          src="./icons/flowbite--users-group-outline.svg"
+                          alt=""
+                        />
+                      </div>
+                      Employees
+                      <div class="submenu-down-arrow">
+                        <div class="menu-icons black-icon2">
+                          <img
+                            class="icon-black"
+                            src="./icons/solar--arrow-down-outline.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="menu-icons white-icon2 hidden">
+                          <img
+                            class="icon-white"
+                            src="./icons/white_solar--arrow-down-outline.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <div class="sidebar-submenu hidden">
+                  <ul>
+                    <a href="#">
+                      <li
+                        class="employees-submenu active-sidebar-submenu submenu-all-employees"
+                      >
+                        All Employees
+                      </li>
+                    </a>
+                    <a href="#">
+                      <li class="employees-submenu submenu-recent-hires">
+                        Recent Hires
+                      </li>
+                    </a>
+                  </ul>
+                </div>
+                <li>
+                  <a href="#">
+                    <div class="menu-items payroll">
+                      <div class="menu-icons">
+                        <img
+                          src="./icons/hugeicons--invoice-04.svg"
+                          alt=""
+                          class="icon-black"
+                        />
+                      </div>
+                      <div class="menu-icons hidden">
+                        <img
+                          src="./icons/white_hugeicons--invoice-04.svg"
+                          alt=""
+                          class="icon-white"
+                        />
+                      </div>
+                      Payroll
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="menu-items reports">
+                      <div class="menu-icons">
+                        <img
+                          src="./icons/oui--vis-pie.svg"
+                          alt=""
+                          class="icon-black"
+                        />
+                      </div>
+                      <div class="menu-icons hidden">
+                        <img
+                          src="./icons/white_oui--vis-pie.svg"
+                          alt=""
+                          class="icon-white"
+                        />
+                      </div>
+                      Reports
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="menu-items settings">
+                      <div class="menu-icons">
+                        <img
+                          src="./icons/basil--settings-outline.svg"
+                          alt=""
+                          class="icon-black"
+                        />
+                      </div>
+                      <div class="menu-icons hidden">
+                        <img
+                          src="./icons/white_basil--settings-outline.svg"
+                          alt=""
+                          class="icon-white"
+                        />
+                      </div>
+                      Settings
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-section">
+          <div class="header">
+            <div class="search-bar">
+              <img src="./icons/oui--search.svg" alt="" />
+              <input type="text" placeholder="Search anything here" />
+            </div>
+            <div class="profile-notification-setting">
+              <img
+                class="setting-icon"
+                src="./icons/uiw--setting-o.svg"
+                alt=""
+              />
+              <img
+                class="notification-icon"
+                src="./icons/lucide--bell.svg"
+                alt=""
+              />
+              <div class="profile-pic">
+                <img src="./img/pfphoto1.png" alt="" />
+                <div class="online-status"></div>
+              </div>
+            </div>
+          </div>
+          <div class="main" id="main">
+            <div class="card hidden" id="employees-card">
+              <div class="card-header">
+                <div class="left">
+                  <h2>
+                    Employees
+                    <span><img src="./icons/ph--question.svg" alt="" /></span>
+                  </h2>
+                  <div class="number">100</div>
+                </div>
+                <div class="right">
+                  <button class="btn export-file" id="export-file">
+                    <img
+                      src="./icons/solar--download-linear.svg"
+                      alt=""
+                    />Export
+                  </button>
+                  <button class="btn new-employee" id="new-employee">
+                    <img src="./icons/add---new-01.svg" alt="" />New Employee
+                  </button>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content-nav">
+                  <ul>
+                    <a href="#"
+                      ><li class="active-card-content">All Employees</li>
+                    </a>
+                    <a href="#"><li>Teams</li></a>
+                    <a href="#"><li>Roles</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="allEmployee-content">
+                <div class="table-section">
+                  <div class="table-header">
+                    <div class="search-bar">
+                      <img src="./icons/oui--search.svg" alt="" />
+                      <input
+                        type="text"
+                        placeholder="Search Employee by name, role, ID or any related keywords"
+                      />
+                    </div>
+                    <div class="filter-list-thumbnail">
+                      <button class="btn filter">
+                        <div class="icon-image">
+                          <img src="./icons/filter-Icon.svg" alt="" />
+                        </div>
+                        Filter
+                      </button>
+                      <div class="icon-list-thumbnail">
+                        <button class="btn list">
+                          <div class="icon-image">
+                            <img src="./icons/list-edit-icon.svg" alt="" />
+                          </div>
+                        </button>
+                        <button class="btn thumbnail">
+                          <div class="icon-image">
+                            <img src="./icons/block-linear-icon.svg" alt="" />
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="table-data" class="table-body">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>
+                            <span class="checkbox-input">
+                              <input type="checkbox" name="check" id="check" />
+                            </span>
+                            Name
+                          </th>
+                          <th>Employee ID</th>
+                          <th>Role</th>
+                          <th>Status</th>
+                          <th>Teams</th>
+                        </tr>
+                      </thead>
+                      <tbody id="pagination-list">
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span class="img-container">
+                                <img src="./img/Avatar.png" alt="" />
+                              </span>
+                              <div class="employee-info">
+                                <h2>Tanner Finsha</h2>
+                                <p>@Tannerfisher@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Product Designer</h3>
+                              <p>Full time</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status active-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Active</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Marketing</span
+                                ><span class="teams-role">Design</span
+                                ><span class="teams-level">+1</span>
+                              </div>
+                              <span class="td-teams-right">&#8942;</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span
+                                class="presence-status offline-presence-status"
+                              ></span
+                              ><span class="img-container"> EW </span>
+                              <div class="employee-info">
+                                <h2>Emeto Winner</h2>
+                                <p>Emetowinner@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Product Designer</h3>
+                              <p>Contract</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status active-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Active</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Product</span
+                                ><span class="teams-role">Design</span
+                                ><span class="teams-level">+1</span>
+                              </div>
+                              <span class="td-teams-right three-dots-light"
+                                >&#8942;</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span class="img-container">
+                                <img src="./img/Avatar.png" alt="" />
+                                <span
+                                  class="presence-status online-presence-status"
+                                ></span>
+                              </span>
+                              <div class="employee-info">
+                                <h2>Tassy Omah</h2>
+                                <p>@Tassyomah@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Product Designer</h3>
+                              <p>Associate</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status inactive-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Inactive</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Product</span
+                                ><span class="teams-role hidden"></span
+                                ><span class="teams-level hidden"></span>
+                              </div>
+                              <span class="td-teams-right">&#8942;</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span class="img-container"> JW </span>
+                              <div class="employee-info">
+                                <h2>James Muriel</h2>
+                                <p>JamesMuriel@Aerten.finance</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Product Designer</h3>
+                              <p>Full time</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status inactive-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Inactive</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Engineering</span
+                                ><span class="teams-role">Design</span
+                                ><span class="teams-level hidden">+1</span>
+                              </div>
+                              <span class="td-teams-right three-dots-light"
+                                >&#8942;</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span class="img-container"> EW </span>
+                              <div class="employee-info">
+                                <h2>Emeto Winner</h2>
+                                <p>Emetowinner@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Frontend Engineer</h3>
+                              <p>Full time</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status inactive-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Inactive</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Product</span
+                                ><span class="teams-role">Design</span
+                                ><span class="teams-level">+3</span>
+                              </div>
+                              <span class="td-teams-right three-dots-light"
+                                >&#8942;</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span class="img-container">TO </span>
+                              <div class="employee-info">
+                                <h2>Tassy Omah</h2>
+                                <p>@Tassyomah@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Backend Engineer</h3>
+                              <p>Part time</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status active-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Active</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Engineering</span
+                                ><span class="teams-role">Design</span
+                                ><span class="teams-level hidden"></span>
+                              </div>
+                              <span class="td-teams-right">&#8942;</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span class="img-container"> JW </span>
+                              <div class="employee-info">
+                                <h2>James Muriel</h2>
+                                <p>JamesMuriel@Aerten.finance</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Backend Engineer</h3>
+                              <p>Part time</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status active-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Active</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Product</span
+                                ><span class="teams-role">Design</span
+                                ><span class="teams-level">+6</span>
+                              </div>
+                              <span class="td-teams-right three-dots-light"
+                                >&#8942;</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td>
+                            <div class="td-employee-info">
+                              <span class="checkbox-input">
+                                <input
+                                  type="checkbox"
+                                  name="check"
+                                  id="check"
+                                />
+                              </span>
+                              <span class="img-container"> EW </span>
+                              <div class="employee-info">
+                                <h2>Emeto Winner</h2>
+                                <p>Emetowinner@gmail.com</p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="employee-id">#23454GH6J7YT6</span>
+                          </td>
+                          <td>
+                            <div class="td-role-info">
+                              <h3>Sales specialist</h3>
+                              <p>Part time</p>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="status inactive-status"
+                              ><span class="status-indicator">&bull;</span>
+                              Inactive</span
+                            >
+                          </td>
+                          <td>
+                            <div class="td-teams">
+                              <div class="td-teams-left">
+                                <span class="teams-dept">Product</span
+                                ><span class="teams-role">Design</span
+                                ><span class="teams-level">+4</span>
+                              </div>
+                              <span class="td-teams-right three-dots-light"
+                                >&#8942;</span
+                              >
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- This is where the other tables data start -->
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr class="pagination-item">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="pagination-container">
+                    <button
+                      type="pagination"
+                      class="pagination-button"
+                      id="prev-button"
+                    >
+                      &#8592; Previous
+                    </button>
+
+                    <div id="pagination-numbers"></div>
+                    <button class="pagination-button" id="next-button">
+                      Next &#8594;
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card hidden" id="roles-card">
+              <div class="card-header">
+                <div class="left">
+                  <h2>
+                    Roles
+                    <span><img src="./icons/ph--question.svg" alt="" /></span>
+                  </h2>
+
+                  <div class="number">123</div>
+                </div>
+                <div class="right">
+                  <button class="btn export-file assign-role" id="export-file">
+                    <img
+                      src="./icons/_Avatar add button.svg"
+                      alt=""
+                      style="opacity: 0.7; width: 19px"
+                    />Assign
+                  </button>
+
+                  <button class="btn new-employee" id="new-employee">
+                    <img src="./icons/add---new-01.svg" alt="" />New Role
+                  </button>
+                </div>
+              </div>
+              <div class="card-content">
+                <div class="content-nav">
+                  <ul>
+                    <a href="#"
+                      ><li class="active-card-content">All Roles</li>
+                    </a>
+                    <a href="#"><li>Permissions</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="allRoles-content">
+                <div class="table-header">
+                  <div class="search-bar">
+                    <img src="./icons/oui--search.svg" alt="" />
+                    <input
+                      type="text"
+                      placeholder="Search Employee by name, role, ID or any related keywords"
+                    />
+                  </div>
+                </div>
+                <div class="content-nav">
+                  <ul class="">
+                    <a href="#"><li class="active-card-content">All</li> </a>
+                    <a href="#"><li>Product</li></a>
+                    <a href="#"><li>Engineering</li></a>
+                    <a href="#"><li>Marketing</li></a>
+                    <a href="#"><li>Recruitment</li></a>
+                    <a href="#"><li>Sales</li></a>
+                    <a href="#"><li>Customer service</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="roles-card-container">
+                <div class="role-cards">
+                  <div class="role-cards-header">
+                    <h2>Solution Sales Specialist</h2>
+                    <div class="members-profile-photos_add">
+                      <div class="members-profile-photos">
+                        <img src="./img/Avatar1.png" alt="" />
+                        <img src="./img/Avatar2.png" alt="" />
+                        <img src="./img/Avatar3.png" alt="" />
+                        <img src="./img/Avatar4.png" alt="" />
+                        <img src="./img/Avatar5.png" alt="" />
+                        <img src="./img/Avatar6.png" alt="" />
+                      </div>
+                      <div class="more-members-btn">
+                        <img src="./img/_Avatar add button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="role-cards-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                  </div>
+                  <div class="role-cards-description">
+                    <span class="roles">Marketing</span>
+                    <span class="roles">Product</span>
+                    <span class="roles">Engineering</span>
+                    <span class="roles active-roles">Design</span>
+                  </div>
+                  <div class="role-cards-employee-designation">
+                    <div class="image-container">
+                      <img src="./img/roles_Avatar.png" alt="" />
+                    </div>
+                    <div class="designation-description">
+                      <h3>James campion</h3>
+                      <p>Manager</p>
+                    </div>
+                    <div>&#8594;</div>
+                  </div>
+                </div>
+                <div class="role-cards">
+                  <div class="role-cards-header">
+                    <h2>Solution Sales Specialist</h2>
+                    <div class="members-profile-photos_add">
+                      <div class="members-profile-photos">
+                        <img src="./img/Avatar1.png" alt="" />
+                        <img src="./img/Avatar2.png" alt="" />
+                        <img src="./img/Avatar3.png" alt="" />
+                        <img src="./img/Avatar4.png" alt="" />
+                        <img src="./img/Avatar5.png" alt="" />
+                        <img src="./img/Avatar6.png" alt="" />
+                      </div>
+                      <div class="more-members-btn">
+                        <img src="./img/_Avatar add button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="role-cards-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                  </div>
+                  <div class="role-cards-description">
+                    <span class="roles">Marketing</span>
+                    <span class="roles">Product</span>
+                    <span class="roles">Engineering</span>
+                    <span class="roles active-roles">Design</span>
+                  </div>
+                  <div class="role-cards-employee-designation">
+                    <div class="image-container">
+                      <img src="./img/roles_Avatar.png" alt="" />
+                    </div>
+                    <div class="designation-description">
+                      <h3>James campion</h3>
+                      <p>Manager</p>
+                    </div>
+                    <div>&#8594;</div>
+                  </div>
+                </div>
+                <div class="role-cards">
+                  <div class="role-cards-header">
+                    <h2>Solution Sales Specialist</h2>
+                    <div class="members-profile-photos_add">
+                      <div class="members-profile-photos">
+                        <img src="./img/Avatar1.png" alt="" />
+                        <img src="./img/Avatar2.png" alt="" />
+                        <img src="./img/Avatar3.png" alt="" />
+                        <img src="./img/Avatar4.png" alt="" />
+                        <img src="./img/Avatar5.png" alt="" />
+                        <img src="./img/Avatar6.png" alt="" />
+                      </div>
+                      <div class="more-members-btn">
+                        <img src="./img/_Avatar add button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="role-cards-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                  </div>
+                  <div class="role-cards-description">
+                    <span class="roles">Marketing</span>
+                    <span class="roles">Product</span>
+                    <span class="roles">Engineering</span>
+                    <span class="roles active-roles">Design</span>
+                  </div>
+                  <div class="role-cards-employee-designation">
+                    <div class="image-container">
+                      <img src="./img/roles_Avatar.png" alt="" />
+                    </div>
+                    <div class="designation-description">
+                      <h3>James campion</h3>
+                      <p>Manager</p>
+                    </div>
+                    <div>&#8594;</div>
+                  </div>
+                </div>
+                <div class="role-cards">
+                  <div class="role-cards-header">
+                    <h2>Solution Sales Specialist</h2>
+                    <div class="members-profile-photos_add">
+                      <div class="members-profile-photos">
+                        <img src="./img/Avatar1.png" alt="" />
+                        <img src="./img/Avatar2.png" alt="" />
+                        <img src="./img/Avatar3.png" alt="" />
+                        <img src="./img/Avatar4.png" alt="" />
+                        <img src="./img/Avatar5.png" alt="" />
+                        <img src="./img/Avatar6.png" alt="" />
+                      </div>
+                      <div class="more-members-btn">
+                        <img src="./img/_Avatar add button.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="role-cards-body">
+                    <p>
+                      Responsible for driving revenue growth by identifying and
+                      pursuing new business opportunities, as well as
+                      maintaining relationships with existing clients. working
+                      closely with customers to understand their needs and
+                      provide solutions that meet or exceed their expectations,
+                      while also achieving the company's sales goals.
+                    </p>
+                  </div>
+                  <div class="role-cards-description">
+                    <span class="roles">Marketing</span>
+                    <span class="roles">Product</span>
+                    <span class="roles">Engineering</span>
+                    <span class="roles active-roles">Design</span>
+                  </div>
+                  <div class="role-cards-employee-designation">
+                    <div class="image-container">
+                      <img src="./img/roles_Avatar.png" alt="" />
+                    </div>
+                    <div class="designation-description">
+                      <h3>James campion</h3>
+                      <p>Manager</p>
+                    </div>
+                    <div>&#8594;</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="assign-role-modal">
+            <img src="./icons/close--.svg" alt="" class="modal-close" />
+            <img src="./img/Featured icon.svg" alt="" />
+            <h1>Assign this role</h1>
+            <p class="assign-role-instruction">
+              Select one or multiple employees to assign to this role
+              <span class="assigned-role">“Senior Design Lead“</span>
+            </p>
+            <div class="search-bar-assign">
+              <div class="assign-search-bar">
+                <img src="./icons/assign-role-search.svg" alt="" />
+                <input
+                  type="text"
+                  placeholder="Search for an indivdual or team"
+                />
+              </div>
+              <img src="./icons/assign-role-question.svg" alt="" />
+            </div>
+            <div class="assign-listed-employees-container">
+              <div class="assign-listed-employees">
+                <label for="role1">
+                  <div class="employee-info-assign">
+                    <img src="./img/jeniniferAvatar.png" alt="" />
+                    <div class="employee-name-assign">
+                      <h2>Jennifer Lopez</h2>
+                      <p class="assign-role-role">
+                        Product Designer, Integrations
+                      </p>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    name="assign-role"
+                    id="role1"
+                    class="role"
+                    value="Jennifer Lopez"
+                  />
+                </label>
+              </div>
+              <div class="assign-listed-employees">
+                <label for="role2">
+                  <div class="employee-info-assign">
+                    <img src="./img/TassyAvatar.png" alt="" />
+                    <div class="employee-name-assign">
+                      <h2>Tassy Omah</h2>
+                      <p class="assign-role-role">
+                        Developer Relations, Payments
+                      </p>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    name="assign-role"
+                    id="role2"
+                    class="role"
+                    value="Tassy Omah"
+                  />
+                </label>
+              </div>
+              <div class="assign-listed-employees">
+                <label for="role3">
+                  <div class="employee-info-assign">
+                    <img src="./img/emetoAvatar.png" alt="" />
+                    <div class="employee-name-assign">
+                      <h2>Emeto winner</h2>
+                      <p class="assign-role-role">
+                        Backend Developer, Payments
+                      </p>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    name="assign-role"
+                    id="role3"
+                    class="role"
+                    value="Emeto winner"
+                  />
+                </label>
+              </div>
+              <div class="assign-listed-employees">
+                <label for="role4">
+                  <div class="employee-info-assign">
+                    <img src="./img/JaneAvatar.png" alt="" />
+                    <div class="employee-name-assign">
+                      <h2>Jane mena</h2>
+                      <p class="assign-role-role">
+                        Technical specialist, Enterprise
+                      </p>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    name="assign-role"
+                    id="role4"
+                    class="role"
+                    value="Jane mena "
+                  />
+                </label>
+              </div>
+              <div class="assign-listed-employees">
+                <label for="role5">
+                  <div class="employee-info-assign">
+                    <img src="./img/KateAvatar.png" alt="" />
+                    <div class="employee-name-assign">
+                      <h2>Kate Magnamay</h2>
+                      <p class="assign-role-role">Product Manager, Dashboard</p>
+                    </div>
+                  </div>
+                  <input
+                    type="checkbox"
+                    name="assign-role"
+                    id="role5"
+                    class="role"
+                    value="Kate Magnamay"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="overlay-modal hidden"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
