@@ -520,6 +520,8 @@ table tbody td {
 .pagination-ellipsis {
   font-weight: 700;
   color: #667085;
+  border: none !important;
+  background-color: #ffffff !important;
 }
 
 /* Roles Section */
