@@ -265,16 +265,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextButton = document.getElementById('next-button');
 
   const display = 8; // items per page
-  let count = 1; // current page
-  const buttonCount = Math.ceil(tr.length / display); //showing how many bottons based on the items to display.
+  let activeButton = 1; // current page
+  const totalButtons = Math.ceil(tr.length / display); //showing how many bottons based on the items to display.
 
   //! Render dynamic buttons
   function renderButtons() {
     paginationNumber.innerHTML = ''; // Clear existing buttons
 
-    if (buttonCount <= 7) {
+    if (totalButtons <= 7) {
       // Display all buttons if there are 7 or fewer pages
-      for (let i = 1; i <= buttonCount; i++) {
+      for (let i = 1; i <= totalButtons; i++) {
         addButton(i);
       }
     } else {
@@ -282,29 +282,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let start, end;
 
-      if (count <= 4) {
-        // If count is less than or equal to 4, display buttons 2 to 5
+      if (activeButton <= 4) {
+        // If activeButton is less than or equal to 4, display buttons 2 to 5
         start = 2;
         end = 5;
-      } else if (count >= buttonCount - 3) {
-        // If count is greater than or equal to buttonCount - 3, display buttons (buttonCount - 4) to (buttonCount - 1)
-        start = buttonCount - 4;
-        end = buttonCount - 1;
+      } else if (activeButton >= totalButtons - 3) {
+        // If activeButton is greater than or equal to totalButtons - 3, display buttons (totalButtons - 4) to (totalButtons - 1)
+        start = totalButtons - 4;
+        end = totalButtons - 1;
       } else {
-        // Otherwise, display buttons (count - 1) to (count + 1)
-        start = count - 1;
-        end = count + 1;
+        // Otherwise, display buttons (activeButton - 1) to (activeButton + 1)
+        start = activeButton - 1;
+        end = activeButton + 1;
       }
 
-      // Add buttons and ellipsis in the middle
+      start = activeButton + 1;
+      end = totalButtons - 1;
+
+      let middleButtons = [];
       for (let i = start; i <= end; i++) {
-        addButton(i);
-        if (i === start + 1 && end - start > 2) {
-          addEllipsisButton(i + 1);
-        }
+        middleButtons.push(i);
       }
 
-      addButton(buttonCount); // Always add the last button
+      let firstHalf = middleButtons.slice(0, 2); // First two numbers
+      let secondHalf = middleButtons.slice(-2); // Last two numbers
+
+      console.log(secondHalf);
+      // Add first half of middle buttons before ellipsis
+      for (let i = 0; i < firstHalf.length; i++) {
+        addButton(firstHalf[i]);
+      }
+
+      // Add first ellipsis if needed
+      if (start >= 2) {
+        addEllipsisButton(firstHalf[firstHalf.length - 1] + 1);
+      }
+
+      // Add second half of middle buttons after ellipsis
+      for (let i = 0; i < secondHalf.length; i++) {
+        addButton(secondHalf[i]);
+      }
+
+      // // Add second ellipsis if needed
+      // if (end < totalButtons - 1) {
+      //   addEllipsisButton(secondHalf[secondHalf.length - 1] + 1);
+      // }
+
+      addButton(totalButtons); // Always add the last button
     }
   }
 
@@ -313,13 +337,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.createElement('button');
     button.innerHTML = pageNum;
     button.className = 'pagination-button';
-    if (pageNum == count) {
+    if (pageNum == activeButton) {
       button.classList.add('active');
     }
     button.addEventListener('click', function () {
-      count = pageNum;
+      activeButton = pageNum;
       renderButtons();
-      main(count);
+      main(activeButton);
       updateButtonStates();
     });
     paginationNumber.appendChild(button);
@@ -330,34 +354,35 @@ document.addEventListener('DOMContentLoaded', () => {
     button.innerHTML = '...';
     button.className = 'pagination-ellipsis';
     button.addEventListener('click', function () {
-      count = nextPage;
+      activeButton = nextPage;
       renderButtons();
-      main(count);
+      main(activeButton);
       updateButtonStates();
     });
     paginationNumber.appendChild(button);
   }
+
   function next() {
-    if (count < buttonCount) {
-      count++;
+    if (activeButton < totalButtons) {
+      activeButton++;
       renderButtons();
-      main(count);
+      main(activeButton);
       updateButtonStates();
     }
   }
 
   function prev() {
-    if (count > 1) {
-      count--;
+    if (activeButton > 1) {
+      activeButton--;
       renderButtons();
-      main(count);
+      main(activeButton);
       updateButtonStates();
     }
   }
 
   function updateButtonStates() {
-    previousButton.disabled = count == 1;
-    nextButton.disabled = count == buttonCount;
+    previousButton.disabled = activeButton == 1;
+    nextButton.disabled = activeButton == totalButtons;
   }
 
   previousButton.addEventListener('click', prev);

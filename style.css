@@ -20,6 +20,8 @@
 }
 
 body {
+  display: flex;
+  min-height: 100vh;
   background-color: #eaecf0;
   padding: 20px;
   font-family: 'Space Grotesk', sans-serif;
@@ -280,7 +282,10 @@ body {
 .table-section {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
-  overflow: auto;
+  overflow-x: auto;
+}
+.table-section table {
+  width: 100%;
 }
 
 .table-header {
@@ -509,6 +514,7 @@ table tbody td {
 }
 .pagination-button:disabled:hover {
   background-color: #ffffff;
+  color: #6a10392a;
 }
 
 .pagination-ellipsis {
