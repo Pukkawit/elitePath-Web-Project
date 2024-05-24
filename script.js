@@ -21,7 +21,6 @@ const exportFile = document.getElementById('export-file');
 const addNewEemployee = document.getElementById('add-new-employee');
 const assignRoleSearch = document.getElementById('assign-roles_search');
 
-// exportFile.style.display = 'none';
 /* Assign role modal popup */
 assignRole.addEventListener('click', function () {
   OverlayModal.classList.remove('hidden');
