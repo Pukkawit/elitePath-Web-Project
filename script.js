@@ -15,7 +15,12 @@ const assignRoleModal = document.querySelector('.assign-role-modal');
 const OverlayModal = document.querySelector('.overlay-modal');
 const closeModal = document.querySelector('.modal-close');
 const listedRoles = document.querySelectorAll('.role');
+const mainsearch = document.getElementById('main-search');
+const employeeSearch = document.getElementById('employee-search');
+const exportFile = document.getElementById('export-file');
+const addNewEemployee = document.getElementById('add-new-employee');
 
+// exportFile.style.display = 'none';
 /* Assign role modal popup */
 assignRole.addEventListener('click', function () {
   OverlayModal.classList.remove('hidden');
