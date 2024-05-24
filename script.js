@@ -19,6 +19,7 @@ const mainsearch = document.getElementById('main-search');
 const employeeSearch = document.getElementById('employee-search');
 const exportFile = document.getElementById('export-file');
 const addNewEemployee = document.getElementById('add-new-employee');
+const assignRoleSearch = document.getElementById('assign-roles_search');
 
 // exportFile.style.display = 'none';
 /* Assign role modal popup */
